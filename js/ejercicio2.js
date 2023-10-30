@@ -2,7 +2,7 @@ let nota=parseInt(prompt("Ingrese nota de 0 a 10: "));
 
 if (isNaN(nota))
 {
-    alert("No se ha ingresado una Nota valida: "+ nota);
+    alert("No se ha ingresado una numero valido: "+ nota);
 }else if((nota >= 0)  && (nota <= 2))
 {
     alert("Su calificación es 'Muy deficiente': "+ nota);
@@ -21,5 +21,8 @@ if (isNaN(nota))
 }else if(nota === 10)
 {
     alert("Su calificación es 'Sobresaliente': "+ nota);
+}else if(nota > 10)
+{
+    alert("Numero erróneo: "+ nota);
 }
 
