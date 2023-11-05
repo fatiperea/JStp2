@@ -12,7 +12,15 @@ do {
     texto.charAt(i) === "u"
   ) {
     vocalEncontrada = false;
-    document.write("La primera vocal "+texto.charAt(i)+" esta en la posición: ", i);
+    document.write(
+      "La primera vocal " + texto.charAt(i) + " esta en la posición: ",
+      i
+    );
+  } else {
+    vocalEncontrada = true;
   }
   i++;
-} while (vocalEncontrada);
+} while (vocalEncontrada && i<texto.length);
+if (vocalEncontrada === true) {
+  document.write("No ingreso texto con vocales");
+}
